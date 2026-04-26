@@ -1,15 +1,15 @@
 class Ostk < Formula
   desc "Distributed operating system for AI agents"
   homepage "https://ostk.ai"
-  version "4.3.0"
+  version "4.3.1"
   license "BSL-1.1"
 
   if OS.mac?
-    url "https://github.com/os-tack/ostk.ai/releases/download/v4.3.0/ostk-4.3.0-darwin-universal.tar.gz"
-    sha256 "524b7d7e8cc1e0274ad2e713642bb7cc8380a2f6ad051eb1b6fb120ceeab4ca1"
+    url "https://github.com/os-tack/ostk.ai/releases/download/v4.3.1/ostk-4.3.1-darwin-universal.tar.gz"
+    sha256 "b094887860041a6b990c5c9abd9bc36d372867f4b73a2a88cc0c2857e7b81141"
   elsif OS.linux?
-    url "https://github.com/os-tack/ostk.ai/releases/download/v4.3.0/ostk-4.3.0-x86_64-unknown-linux-musl.tar.gz"
-    sha256 "7c25714694880aa0f787f05cc3e396cc5b5de2b159c9fbc1701b386746b47892"
+    url "https://github.com/os-tack/ostk.ai/releases/download/v4.3.1/ostk-4.3.1-x86_64-unknown-linux-musl.tar.gz"
+    sha256 "f7119862bf060545bd803cbeab7d84a351c42e118a99824fab9c69d17b7299d4"
   end
 
   def install
