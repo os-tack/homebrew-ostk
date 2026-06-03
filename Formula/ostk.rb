@@ -1,16 +1,16 @@
 class Ostk < Formula
   desc "Distributed operating system for AI agents"
   homepage "https://ostk.ai"
-  version "7.0.0"
+  version "7.1.0"
   license "BSL-1.1"
 
   if OS.mac?
     odie "ostk requires Apple Silicon on macOS as of v5.1.2 — Intel Mac unsupported (track at https://github.com/os-tack/haystack/issues)" unless Hardware::CPU.arm?
-    url "https://github.com/os-tack/ostk.ai/releases/download/v7.0.0/ostk-7.0.0-aarch64-apple-darwin.tar.gz"
-    sha256 "a4dd77970dc0ffb2d77c7973aabe2128ad44cc71c5330754d547d7159f5e8dfc"
+    url "https://github.com/os-tack/ostk.ai/releases/download/v7.1.0/ostk-7.1.0-aarch64-apple-darwin.tar.gz"
+    sha256 "8483d7e0dec59be9f4146237df2830eb3db4abfc2b2aaf95fa9f905da45f7f61"
   elsif OS.linux?
-    url "https://github.com/os-tack/ostk.ai/releases/download/v7.0.0/ostk-7.0.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "a37981a362eb36f00ebe2dbf935a7299e3b1a9e24886a0f49734f91a4566308f"
+    url "https://github.com/os-tack/ostk.ai/releases/download/v7.1.0/ostk-7.1.0-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "20f85b3e1b2e243ba76d12c09a5f7341ca408233bf9f2b6feb7f539c174024e9"
   end
 
   def install
